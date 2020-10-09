@@ -17,8 +17,9 @@ public class t3Ej2 {
     Scanner s = new Scanner(System.in);
 		double euros = 0;
     int pesetas = 0;
-    String frase= "Introduce la cantidad de euros que quieres cambiar: ";
-    System.out.printf("Esto es un conversor %10s\n", frase);
+    String frase= "Introduce la cantidad de euros que quieres cambiar:\n ";
+    
+    System.out.printf("%50s%55s", "Esto es un convertidor de euros a pesetas.\n",frase);
     
     euros = s.nextDouble();
     pesetas= (int)(euros * 166.386);
