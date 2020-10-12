@@ -35,7 +35,7 @@ public class t4Ej4 {
       
     }else{
       
-            System.out.println("El sueldo + el extra de esta semana es: " + (((horasTot-hExt)*12) + (hExt*12)));
+            System.out.println("El sueldo + el extra de esta semana es: " + (((horasTot-hExt)*12) + (hExt*16)));
 
       
       }

@@ -24,27 +24,27 @@ public class t4Ej3 {
         break;
       
       case 2 :
-        System.out.println("\t\tMartes");
+        System.out.println("\n\t\tMartes");
         break;
       
       case 3 :
-      System.out.println("\t\t\tMiercoles");
+      System.out.println("\n\n\t\t\tMiercoles");
       break;
       
       case 4 :
-        System.out.println("\t\t\t\tjueves");
+        System.out.println("\n\n\n\t\t\t\tjueves");
         break;
         
       case 5 :
-        System.out.println("\t\t\t\t\tViernes");
+        System.out.println("\n\n\n\n\t\t\t\t\tViernes");
         break;
       
       case 6 :
-        System.out.println("\t\t\t\t\t\tSabado");
+        System.out.println("\n\n\n\n\n\t\t\t\t\t\tSabado");
         break;
         
       case 7 :
-        System.out.println("\t\t\t\t\t\t\tDomingo");
+        System.out.println("\n\n\n\n\n\n\t\t\t\t\t\t\tDomingo");
         break;
         
       default :
