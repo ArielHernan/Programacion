@@ -20,7 +20,7 @@ public class t4Ej4 {
     int hExt=0;
     int salNor=0;
     int salExt=0;
-;    
+
     System.out.println("Este programa calcula el sueldo semanal, calculando las horas extras si fuera necesario");
     System.out.println("Introduce el número de horas trabajadas y te diremos el sueldo\n");
     
