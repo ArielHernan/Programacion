@@ -9,10 +9,8 @@
   * “Lo siento, esa no es la combinación” y si acertamos se nos dirá
   * “La caja fuerte se ha abierto satisfactoriamente”. Tendremos cuatro
   * oportunidades para abrir la caja fuerte.
-
  * 
  */
-
 import java.util.Scanner;
 public class tema5Ej7 {
 	
@@ -37,7 +35,7 @@ public class tema5Ej7 {
          }
       contador=contador+1;
       }while((contador<5)||(n!clave));
-;      
+    
 	
 }
 }
