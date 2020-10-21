@@ -18,7 +18,7 @@ public class tema5Ej13 {
      int auxP=0;
      int auxN=0;
      
-     for(int i =1;i<=10;i++){
+     for(int i=1;i<=10;i++){
        System.out.println("Introduce un número");
        n=s.nextInt();
        if(n<0){
@@ -27,12 +27,9 @@ public class tema5Ej13 {
            
            auxP++;
            }
-      }
-      
-                 
+      }         
            System.out.println("El número de positivos son: " + auxP);
-           System.out.println("El número de negativos son: " + auxN);
-           
+           System.out.println("El número de negativos son: " + auxN);  
   } 
 		
 }
