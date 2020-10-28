@@ -11,11 +11,14 @@ import java.util.Scanner;
 public class tema5Ej17 {
 	
 	public static void main (String args[]) {
+    
     Scanner s=new Scanner(System.in);
     System.out.println("sume los 100 números siguientes a un número entero\ny positivo introducido por teclado. Se debe comprobar que el dato introducidoes correcto (que es un número positivo). ");
 		System.out.println();
+    
     int n=-1;
     int suma=0;
+    
     while(n<0){
       
       System.out.println("introduce un número");
@@ -30,6 +33,8 @@ public class tema5Ej17 {
         suma=suma+i;
         
         }
+    System.out.println("introduce un número");
+
     System.out.println("La suma de " + n + " y sus cien números siguientes es: " + suma);      
       
 	}
