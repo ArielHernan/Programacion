@@ -23,11 +23,11 @@ public class tema5Ej19 {
     System.out.println("Introduce el simbolo:");
     String simbolo=System.console().readLine();
     
-    int contador=0;
-    int espacio=((altura-1)+10);
+    int contador=1;
+    int espacio=(2*(altura-1))+10;
     int pintacaracter=1;
     
-    do{
+    while(contador<altura){
       
       for (int i=0;i<espacio;i++){
         
@@ -40,9 +40,9 @@ public class tema5Ej19 {
         }
       System.out.println();
       espacio--;
-      pintacaracter=pintacaracter+2;
+      pintacaracter+=2;
       altura--;
-      }while(contador<altura);
+      }
     
 
 	}
