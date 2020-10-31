@@ -24,8 +24,8 @@ public class tema5Ej20 {
     int espacio= (a-1)+10;
     int contador=0;  
     
-    for(int i=0;i<a;i++){                          //imprime las capas
-      for(int j=0;j<espacio;j++){                  //imprime los espacios
+    for(int i=0;i<a;i++){                           //imprime las capas
+      for(int j=0;j<espacio;j++){                   //imprime los espacios
         System.out.print(" ");
         }
       if(contador<=1){

@@ -19,6 +19,7 @@ public class tema5Ej21 {
     int suma=0;
     int mediaImpares=0;
     int mayorPares=0;
+    int contadorImpares=0;
 
     
     
@@ -30,8 +31,9 @@ public class tema5Ej21 {
           mayorPares=n;
           }
           if(n%2!=0&&n>=0){
+            contadorImpares++;
             suma=suma+n;
-            mediaImpares=suma/n;
+            mediaImpares=suma/contadorImpares;
             }
 
         contador++;
