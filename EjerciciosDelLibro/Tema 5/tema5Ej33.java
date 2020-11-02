@@ -18,8 +18,13 @@ public class tema5Ej33 {
     System.out.println("Pintamos una U,itroduce la altura");
     
     int n=Integer.parseInt(System.console().readLine());
-    
+    int nu=n+10;
+    System.out.println();
+    System.out.println();
     for(int i =1;i<n;i++){
+      for(int z=0;z<20;z++){
+        System.out.print(" ");
+        }
       System.out.print("*");
      
       for(int j=0;j<((n/2)+1);j++){
@@ -28,7 +33,9 @@ public class tema5Ej33 {
       System.out.print("*");
       System.out.println();
       }
-      
+   for(int z=0;z<20;z++){
+        System.out.print(" ");
+        }   
    System.out.print(" ");
    for(int i=0;i<((n/2)+1);i++){
    System.out.print("*");

@@ -18,6 +18,7 @@ public class tema5Ej28 {
     System.out.println("numero introduce");
     int n=Integer.parseInt(System.console().readLine());
     int fact=1;
+    
     for(int i=1;i<=n;i++){
       fact*=i;
       }
