@@ -43,8 +43,7 @@ public class tema5Ej34 {
       n2=n2/10;
       }
     System.out.println();
-    System.out.println(girado1);
-    System.out.println(girado2);
+    
 	}
 }
 
