@@ -48,22 +48,6 @@ public class tema5Ej46 {
      for(int ultimalinea=0;ultimalinea<anchura;ultimalinea++){
          System.out.print("* ");       
         }
-        
-
-
-        System.out.println();
-        
-      for(int pisos=0;pisos<altura-2;pisos++){
-         System.out.print("*");
-      for(int i=0;i<espaciosinternos*2+1;i++){ 
-        System.out.print(" ");
-        }
-        System.out.print("*");
-        System.out.println();
-      }
-     for(int ultimalinea=0;ultimalinea<anchura;ultimalinea++){
-         System.out.print("* ");       
-        }
 
 	}
 }

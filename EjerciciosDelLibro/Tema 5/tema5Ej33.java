@@ -19,9 +19,11 @@ public class tema5Ej33 {
     
     int n=Integer.parseInt(System.console().readLine());
     int nu=n+10;
+    
     System.out.println();
     System.out.println();
-    for(int i =1;i<n;i++){
+    
+    for(int i=1;i<n;i++){
       for(int z=0;z<20;z++){
         System.out.print(" ");
         }
