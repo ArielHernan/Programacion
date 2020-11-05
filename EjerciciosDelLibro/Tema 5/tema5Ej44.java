@@ -17,10 +17,15 @@
  */
 
 
-public class untitled {
+public class tema5Ej44{
+ 
 	
 	public static void main (String args[]) {
-		
+		System.out.println("Introduce un numero");
+    int n= Integer.parseInt(System.console().readLine());
+    
+    
+    
 	}
 }
 

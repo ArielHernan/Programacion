@@ -17,8 +17,6 @@ Por favor, introduzca un número entero positivo: 7
 6! = 720
 7! = 5040
  */
-
-
 public class tema5Ej39 {
 	
 	public static void main (String args[]) {
@@ -34,13 +32,9 @@ public class tema5Ej39 {
       for(int i=1;i<aux;i++){
       f*=i;
         }
-
-
-     
       System.out.println(aux + "! = " + f);
        aux++;
       }
-    
 	}
 }
 
