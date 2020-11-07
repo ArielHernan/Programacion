@@ -20,12 +20,26 @@ public class tema5Ej43 {
 	public static void main (String args[]) {
 		
     System.out.println("introduce un número");
-    
     int n= Integer.parseInt(System.console().readLine());
     
     System.out.println("introduce n que posicion partirlo");
-        int posicion= Integer.parseInt(System.console().readLine());
-
+    int posicion= Integer.parseInt(System.console().readLine());
+    
+    int aux=n;
+    int longitud=0;
+    int iz;
+    int der;
+    
+    while(aux>0){
+      longitud++;
+      aux/=10;
+      }
+    int puntodeCorte=(longitud-(posicion-1))*10;
+    System.out.println(puntodeCorte);
+    
+    System.out.print((n/puntodeCorte));
+    System.out.print(n%puntodeCorte);
+    
 	}
 }
 
