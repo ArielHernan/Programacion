@@ -28,7 +28,50 @@
 public class tema5Ej49 {
 	
 	public static void main (String args[]) {
-		
-	}
+    int num;
+    int max=0;
+    int min=1000000;
+    boolean esprimo;
+    int suma=0;
+    int contador=0;
+		do{
+      System.out.println("Por favor, vaya introduciendo números enteros positivos. Para terminar, introduzca un número primo:");
+      num= Integer.parseInt(System.console().readLine());
+
+      esprimo=true;
+      
+      for(int i=2;i<num;i++){
+        
+        if((num%i)==0){
+          esprimo=false;
+          }
+        }
+      
+      if(!(esprimo)){
+        
+        suma=suma+num;
+        contador++;
+        
+        if(num>max){
+          max=num;
+          }
+        if (num<min){
+          min=num;
+          }
+        }
+        
+        
+      }while(!(esprimo));
+      
+      System.out.println();
+
+      System.out.println("El número mas pequeño es: "+min);
+      System.out.println("El número mas grande es: "+max);
+      System.out.println("El suma es: "+suma);
+      System.out.println("Has introducido: "+contador+" números.");
+      System.out.println("La media es: "+(suma/contador));
+
+      
+  }
 }
 
