@@ -16,7 +16,68 @@
 public class tema6Ej2 {
 	
 	public static void main (String args[]) {
+  
+    
+    String nombrepalo= "";
+    String numcarta="";
+    int eligepalo=0;
+    
+    int eligenumero=(int)(Math.random()*13+1);
+    
+    switch(eligenumero){
+      
+      case 1:
+      numcarta="As";
+      break;
+      
+      case 11:
+      numcarta = "J";
+      break;
+       case 12:
+      numcarta = "Q";
+      break;
+      
+       case 13:
+      numcarta = "K";
+      break;
+      
+      default:
+      numcarta=String.valueOf(eligenumero);
+      }
+      
+      eligepalo=(int)(Math.random()*4+1);
+      
+      switch(eligepalo){
+        
+        case 1:
+        nombrepalo= "picas";
+        break;
+        
+        case 2:
+        nombrepalo= "treboles";
+        break;
+        
+        case 3:
+        nombrepalo= "corazones";
+        break;
+        
+        case 4:
+        nombrepalo= "diamantes";
+        break;
+        
+        default:
+        }
+        
+        if(eligenumero==11||eligenumero==12||eligenumero==13){
+        System.out.println("Ha salido la " + numcarta + " de "+  nombrepalo);
+          
+          }else{
+        
+        System.out.println("Ha salido el " + numcarta + " de "+  nombrepalo);
+      }
+      
+    }
 		
 	}
-}
+
 
