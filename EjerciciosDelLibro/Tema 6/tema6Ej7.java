@@ -58,7 +58,7 @@ public class tema6Ej7 {
         }
         
         
-		System.out.printf("%25s","Pleno al 18: VISITANTE.. ");
+		System.out.printf("%28s","Pleno al 15: VISITANTE.. ");
     goles=(int)(Math.random()*3);
     if(goles<3){
       System.out.print(goles);
