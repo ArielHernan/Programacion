@@ -19,7 +19,7 @@ public class tema6Ej12 {
     
     for(int i=0;i<8000;i++){
       for(int j=0;j<79;j++){
-        char n=((char)(Math.random()*(127-32)+32));
+        char n=(char)(Math.random()*(127-32)+32);
         System.out.print(n);
         }
         Thread.sleep(500);
