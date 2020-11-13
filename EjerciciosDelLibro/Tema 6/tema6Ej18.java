@@ -3,41 +3,131 @@
  * 
  * Copyright 2020 Ariel Rojas <arielhernan.rojas.alu@iescampanillas.com>
  * 
-Hacer un programa que repita 1000 veces lo sigueinte: elegir aleatoriamente 3 números entre el 1 y el 6 sin que se repitan, y contabilizarlos.
-
-Al final, el programa debe decirnos cuántas veces ha salido el 1, el 2, ... y el 6.
-
-Para elegir aleatoriamente 3 números, utilice una de las siguientes opciones:
-OPCION A:
-- Repetir la generación de 3 números aleatorios entre 1 y 6 mientras haya coincidencias.
-OPCION B:
-- Generar un número aleatorio entre 1 y 6
-- Repetir la generación un segundo número 
-aleatorio entre 1 y 6 mientras se repita con el primero
-- Repetir la generación de un terecer número aleatorio entre 1 y 6 mientras se repita con el primero o con el segundo.
+    Ejercicio 18
+    Sinestesio y Casilda van a pintar los tres dormitorios de su casa, quieren
+    sustituir el color blanco por colores más alegres. Realiza un programa que
+    genere de forma aleatoria una secuencia de tres colores aleatorios (uno para
+    cada dormitorio) de tal forma que no se repita ninguno. Los colores entre los que
+    debe elegir el programa son los siguientes: rojo, azul, verde, amarillo, violeta y
+    naranja.
+    * 
+    * COMO VARIACION PERSONAL QUIERO PINTAR CADA HABITACION DE 3 COLORES DISTINTOS
  */
 
 
 public class tema6Ej18 {
 	
 	public static void main (String args[]) {
+		
 
-   int n;
-   int n1;
-   int n3;
-   for(int i =0;i<1000;i++){
-    do{
+
+    int tirada1;
+    int tirada2;
+    int tirada3;
+    
+    String color1=" ";
+    String color2=" ";
+    String color3=" ";
+    for(int i=1;i<=3;i++){
       
-    n=(int)(Math.random()*6+1);
-    n1=(int)(Math.random()*6+1);
-    n3=(int)(Math.random()*6+1);
-      }while(n==n1||n==n3||n1==n3);
-    System.out.println(n + " "+n1 + " " + n3);
-    
+      System.out.print("La habitación "+i+" si pintará de: ");
+      do{
+        tirada1=(int)(Math.random()*6+1);
+        tirada2=(int)(Math.random()*6+1);
+        tirada3=(int)(Math.random()*6+1);
+        }while(tirada1==tirada2||tirada1==tirada3||tirada2==tirada3);
+      
+      switch(tirada1){
+        case 1:
+        color1="rojo";
+        break;
+        
+        case 2:
+        color1="azul";
+        break;
+        
+        case 3:
+        color1="verde";
+        break;
+        
+        case 4:
+        color1="amarillo";
+        break;
+        
+        case 5:
+        color1="naranja";
+        break;
+        
+        case 6:
+        color1="violeta";
+        break;
+        
+        default:
+        
+        }
+        
+        switch(tirada2){
+        case 1:
+        color2="rojo";
+        break;
+        
+        case 2:
+        color2="azul";
+        break;
+        
+        case 3:
+        color2="verde";
+        break;
+        
+        case 4:
+        color2="amarillo";
+        break;
+        
+        case 5:
+        color2="naranja";
+        break;
+        
+        case 6:
+        color2="violeta";
+        break;
+        
+        default:
+        
+        }
+        
+        switch(tirada3){
+        case 1:
+        color3="rojo";
+        break;
+        
+        case 2:
+        color3="azul";
+        break;
+        
+        case 3:
+        color3="verde";
+        break;
+        
+        case 4:
+        color3="amarillo";
+        break;
+        
+        case 5:
+        color3="naranja";
+        break;
+        
+        case 6:
+        color3="violeta";
+        break;
+        
+        default:
+        
+        }
+        System.out.print(color1 + " " +color2 + " "+color3);
+        System.out.println();
+      }
+      
+    }
   }
-    
-    
-    
-	}
-}
+
 
