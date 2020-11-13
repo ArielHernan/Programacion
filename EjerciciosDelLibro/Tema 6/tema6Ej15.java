@@ -25,49 +25,54 @@ public class tema6Ej15 {
 	public static void main (String args[]) {
 		
     int numerodenotas= 4 * (int)(Math.random()*7+1);
-    String primeranota;
-    String ultimonumero;
+    String primeranota= " ";
+    String ultimanota=" ";
     int i=0;
-    int nota=0;
+    int eligenota=0;
+    String nota= " ";
     
-    for(i=0;i<numerodenotas;i++){
-      nota=(int)(Math.random()*7+1);
+    System.out.println(numerodenotas);
+    
+    for(i=1;i<=numerodenotas;i++){
+      eligenota=(int)(Math.random()*7);
       
-      switch(nota){
+      switch(eligenota){
+        case 0:
+        nota=("do");
+        break;
+        
         case 1:
-        System.out.print("DO");
+        nota=("RE");
         break;
         
         case 2:
-        System.out.print("RE");
+        nota=("MI");
         break;
         
         case 3:
-        System.out.print("MI");
+        nota=("FA");
         break;
         
         case 4:
-        System.out.print("FA");
+        nota=("SOL");
         break;
         
         case 5:
-        System.out.print("SOL");
+        nota=("LA");
         break;
         
         case 6:
-        System.out.print("LA");
+        nota=("SI");
         break;
         
-        case 7:
-        System.out.print("SI");
-        break;
+        default:
         }
       
       if(i==1){
         primeranota=nota;
         }
       if(i==numerodenotas){
-        ultimanota=primeranota;
+        nota=primeranota;
         }
       System.out.print(nota + " ");
       
