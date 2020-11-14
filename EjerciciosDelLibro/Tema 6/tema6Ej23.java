@@ -16,6 +16,41 @@ public class tema6Ej23 {
 	
 	public static void main (String args[]) {
 		
+    int tirada=0;
+    
+    for(int i=1;i<6;i++){
+      tirada=(int)(Math.random()*6);
+      String figura=" ";
+      
+      switch(tirada){
+        case 0:
+        figura="As";
+        break;
+        
+        case 1:
+        figura="K";
+        break;
+        
+        case 2:
+        figura="J";
+        break;
+        
+        case 3:
+        figura="Q";
+        break;
+        
+        case 4:
+        figura="7";
+        break;
+        
+        case 5:
+        figura="8";
+        break;
+        
+        default:
+        }
+      System.out.print(figura+" ");
+      }
 	}
 }
 
