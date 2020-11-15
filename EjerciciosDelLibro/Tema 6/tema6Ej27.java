@@ -31,12 +31,16 @@ public class tema6Ej27 {
     int tirada=0;
     int ganamaquina=0;
     int ganaHumano=0;
+    
+    
    do{ 
     System.out.println("El juego de piedra papel o tijera, juega contra el ordenador: ");
     System.out.println("Para dejar de jugar escribe:  salir ");
     System.out.println("Elija:  piedra, papel o tijera");
     jugador=System.console().readLine();
+    
     System.out.println();
+    
     if(jugador.equals("salir")){
       break;
       }
