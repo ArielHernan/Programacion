@@ -20,6 +20,11 @@
 public class tema6Ej31 {
 	
 	public static void main (String args[]) {
+    
+    System.out.println("┏━━━━━━━━━━━━━━━━━━━━━━━┓");
+    System.out.println("┃ ⚀ C ⚁ R ⚂ A ⚃ P ⚄ S ⚅ ┃");
+    System.out.println("┗━━━━━━━━━━━━━━━━━━━━━━━┛");
+
 		
     System.out.println("Cuanto dinero quieres apostar:  ");
     int apuesta=Integer.parseInt(System.console().readLine());
@@ -44,6 +49,7 @@ public class tema6Ej31 {
           System.out.println("DAD0 1 : "+dado1);
           System.out.println("DAD0 2 : "+dado2);
           System.out.println("La suma es : "+(dado1+dado2));
+          
           if(dado1+dado2==auxiliar){
             System.out.println("¡OLÉ QUE SUERTE!! HAS GANADO"+(apuesta+apuesta)+" EUROS, Parećia que perdías pero eres un campeón , sigue apostando verás que bien");
             }else if(dado1+dado2==7){
