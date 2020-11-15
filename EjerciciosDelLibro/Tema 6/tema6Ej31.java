@@ -43,32 +43,40 @@ public class tema6Ej31 {
         System.out.print("JA JA eres un looser, habia pocas probabilidades de perder a la primera");
         }else{
           auxiliar=dado1+dado2;
-          System.out.println("Volvemos a tirar los dados a ver si la suma de los dados te da la misma suma");
+          System.out.println("Volvemos a tirar los dados, si sale "+ auxiliar+ " ganas. Si sale 7 pierdes.");
           dado1=(int)(Math.random()*6+1);
           dado2=(int)(Math.random()*6+1);
           System.out.println("DAD0 1 : "+dado1);
           System.out.println("DAD0 2 : "+dado2);
-          System.out.println("La suma es : "+(dado1+dado2));
+          if(dado1+dado2==auxiliar){
+            System.out.println("Has sacado un " + auxiliar);
+            }else if(dado1+dado2==7){
+              System.out.println("Has sacado un 7 ");
+              }else{
+              System.out.println("La suma es : "+(dado1+dado2)+" repetimos hasta sacar un 7 o un " + auxiliar);
+            }
           
           if(dado1+dado2==auxiliar){
-            System.out.println("¡OLÉ QUE SUERTE!! HAS GANADO"+(apuesta+apuesta)+" EUROS, Parećia que perdías pero eres un campeón , sigue apostando verás que bien");
+            System.out.println("¡OLÉ QUE SUERTE!!SUMAN "+auxiliar+" HAS GANADO"+(apuesta+apuesta)+" EUROS, Parećia que perdías pero eres un campeón , sigue apostando verás que bien");
             }else if(dado1+dado2==7){
-              System.out.println("JAJA PARDILLO, HAS PERDIDO!!!!");
+              System.out.println("JAJA, HAS PERDIDO!!!!");
               }else{
                 do{
                   dado1=(int)(Math.random()*6+1);
                   dado2=(int)(Math.random()*6+1);
                   System.out.println("DAD0 1 : "+dado1);
                   System.out.println("DAD0 2 :"+dado2);
-                  System.out.println("La suma es : "+(dado2+dado1)+" en cuanto sumen 7 pierdes si suman "+ auxiliar+" ganas");
+                  if(dado1+dado2==auxiliar){
+                    System.out.println("SUMAN "+auxiliar+" ¡HAS GANADO!! "+(apuesta*2)+" €uros");
+                    }else if(dado1+dado2==7){
+                      System.out.println("¡HAS SACADO UN 7!!!. Lo siento, pierdes.");
+                  }else{
+                    System.out.println("La suma es : "+(dado2+dado1)+" en cuanto sumen 7 pierdes si suman "+ auxiliar+" ganas");
+                  }
                   }while(dado1+dado2!=auxiliar&&dado1+dado2!=7);
                 
                 }
-            if(dado1+dado2==auxiliar){
-              System.out.println("Muy bien monstruo, muy bien has ganado a la última oportunidad "+(apuesta+apuesta)+" euros");
-              }else if(dado1+dado2==7){
-                System.out.println("PERDISTE AL FINAL!!!! SOLO TE QUEDA COMO OPCION REMONTAR. ECHA OTRA MONEDA");
-                }
+          
           }
     
 	}
