@@ -9,8 +9,6 @@
     el máximo de los pares el mínimo de los impares y la media de todos los
     números generados.
  */
-
-
 public class tema6Ej19 {
 	
 	public static void main (String args[]) {

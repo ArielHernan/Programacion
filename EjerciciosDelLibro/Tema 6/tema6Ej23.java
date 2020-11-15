@@ -18,7 +18,7 @@ public class tema6Ej23 {
 		
     int tirada=0;
     
-    for(int i=1;i<6;i++){
+    for(int i=1  ;i<6;i++){
       tirada=(int)(Math.random()*6);
       String figura=" ";
       
