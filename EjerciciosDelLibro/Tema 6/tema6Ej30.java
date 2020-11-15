@@ -37,12 +37,12 @@ public class tema6Ej30 {
     int altcar=0;
     int anccar=0;
     
-    System.out.println("Por favor, introduzca la altura de la pecera (como mínimo 4):");
+    System.out.println("Por favor, introduzca la altura de la pecera (como mínimo 5):");
     alt=Integer.parseInt(System.console().readLine());
     
-    System.out.println("Ahora introduzca la anchura (como mínimo 4):");
+    System.out.println("Ahora introduzca la anchura (como mínimo 5):");
     anc=Integer.parseInt(System.console().readLine());
-    
+   
     do{
       altpez=(int)(Math.random()*(alt-2));
       ancpez=(int)(Math.random()*(anc-2));
