@@ -24,11 +24,7 @@ Intruduzca el número positivo a ser estirado: 123056
 Intruduzca el estiramiento: 3
 El número 123056 estirado por 3 es:
 111222333000555666
-
- * 
  */
-
-
 public class Ex26ahrf4 {
 	
 	public static void main (String args[]) {
@@ -42,13 +38,13 @@ public class Ex26ahrf4 {
     int contador=0;
     int aux=n;
     int alreves=0;
+    
     while(aux>0){
       alreves=(alreves*10)+(aux%10);
       contador++;
       aux/=10;
       }
       System.out.println(alreves);
-
       
     System.out.println("el número " + n +" estirado por "+ estira + " :");
      
@@ -59,10 +55,7 @@ public class Ex26ahrf4 {
           System.out.print(digito);
           }
         alreves/=10;
-
       }
-  
 	}
-  
 }
 

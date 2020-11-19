@@ -24,15 +24,15 @@ public class Ex26ahrf1{
       for(int j=0;j<anchura;j++){
        if(i%2==0){
          if(j%2==0){
-           System.out.print("█");
+           System.out.print("██");
            }else{
-             System.out.print("  ");
+             System.out.print("   ");
              }
          }else{
            if(!(j%2==0)){
-             System.out.print("█");
+             System.out.print("██");
              }else{
-               System.out.print("  ");
+               System.out.print("   ");
                }
            
            }
