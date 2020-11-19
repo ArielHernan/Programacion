@@ -28,10 +28,10 @@ public class tema7Ej5 {
     for(int j=0;j<10;j++){
       System.out.print(num[j]+ " ");
       if(num[j]==max){
-        System.out.print("maximo");
+        System.out.print(" maximo");
         }
       if(num[j]==min){
-        System.out.print("minimo");
+        System.out.print(" minimo");
         }
       System.out.println();
       } 
