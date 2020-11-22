@@ -96,14 +96,13 @@ public class tema7Ej15 {
         System.out.printf("%3d",ocupacion[i]);
         }
       System.out.println();
-      System.out.println();
-      System.out.println();
+
       System.out.println("\ncuantos sois");
       reserva=Integer.parseInt(System.console().readLine());
       
       
       if(reserva>4){
-        System.out.println("\nLo siento no admintimos grupos de "+reserva);
+        System.out.println("\nLo siento no admintimos grupos de "+reserva+"\n");
         }else{
           vacio=false;
           for(int i=0;i<10;i++){
@@ -115,7 +114,7 @@ public class tema7Ej15 {
           
           if(vacio){
             ocupacion[mesaVacia]=reserva;
-            System.out.println("\nSientese en la mesa "+(mesaVacia+1));
+            System.out.println("\nSientese en la mesa \n"+(mesaVacia+1)+"\n\n");
             }else{
               compartido=false;
               for(int i=0;i<10;i++){
@@ -126,7 +125,7 @@ public class tema7Ej15 {
                 }
               if(compartido){
                 ocupacion[mesaCompartida]=ocupacion[mesaCompartida]+reserva;
-                System.out.println("\nComparta la mesa "+(mesaCompartida+1));
+                System.out.println("\nComparta la mesa\n "+(mesaCompartida+1)+"\n\n");
                 }else {
                   System.out.println("\nLo siento, en estos momentos no queda sitio.");
                   }
