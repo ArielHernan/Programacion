@@ -39,6 +39,7 @@ public class tema7Ej7 {
           System.out.print(n[i]+" ");
           }
       
+      
       }
     
 	}
