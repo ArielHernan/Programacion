@@ -26,7 +26,7 @@ public class tema7Ej11 {
     int noprimo=0;
     
     boolean esprimo=false;
-    
+    System.out.println("introduce numero y pulsa enter");
     for(int i=0;i<10;i++){
       n[i]=Integer.parseInt(System.console().readLine());
       esprimo=true;
