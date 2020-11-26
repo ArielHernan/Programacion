@@ -24,7 +24,7 @@ public class tema7Ej3 {
       }
       
 		for(int i=9;i>=0;i--){
-      System.out.print(n[i]," ");
+      System.out.print(n[i]+" "147);
       }
     
 	}

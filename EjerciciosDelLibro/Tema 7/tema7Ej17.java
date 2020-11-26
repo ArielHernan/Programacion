@@ -19,11 +19,43 @@ public class tema7Ej17 {
 	public static void main (String args[]) {
     
     int[] array1=new int[10];
-    for(int i=0;i<9;i++){
+    int n=0;
+    int aux=0;
+    boolean existe=true;
+    
+    for(int i=0;i<10;i++){
       array1[i]=(int)(Math.random()*101);
       System.out.print( array1[i]+" ");
       }
+    System.out.println();
+    do{
+      System.out.println("Introduce uno de los números del array ");
+      n=Integer.parseInt(System.console().readLine());
+      existe=false;
+      for(int i=0;i<10;i++){
+        if(n==array1[i]){
+        existe=true;
+          }
+      }
+    if(!existe){
+      System.out.println("ese numero no esta elige uno del array");
+      }else{
+        System.out.println("ese numero esta en el array , bien");
+        }
+    }while(!existe);
     
+     while(array1[0]!=n){
+      aux=array1[9];
+      for(int i=9;i>0;i--){
+        array1[i]=array1[i-1];
+        }
+      array1[0]=aux;
+      }
+    System.out.println("array resultante");
+    for(int i=0;i<10;i++){
+      System.out.print(array1[i] + " ");
+      }
+   
 	}
 }
 
