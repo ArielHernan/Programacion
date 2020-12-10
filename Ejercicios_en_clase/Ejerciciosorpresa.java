@@ -29,7 +29,7 @@ public class Ejerciciosorpresa {
       }
     System.out.println();
     for(int i=0;i<13;i++){
-      System.out.print(array3[i]);
+      System.out.print(array3[i]+" ");
       }
 	}
 }
