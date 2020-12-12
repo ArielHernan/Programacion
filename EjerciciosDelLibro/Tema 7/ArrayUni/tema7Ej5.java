@@ -33,7 +33,7 @@ public class tema7Ej5 {
       if(num[j]==min){
         System.out.print(" minimo");
         }
-      System.out.println();
+      
       } 
   }
 }
