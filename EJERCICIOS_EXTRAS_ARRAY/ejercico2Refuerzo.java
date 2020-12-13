@@ -10,10 +10,27 @@
  */
 
 
-public class untitled {
+public class ejercico2Refuerzo {
 	
 	public static void main (String args[]) {
 		
+    int array[]= new int[10];
+		System.out.println("Introduzca 10 números zu hermano");
+    
+    for(int i=0;i<10;i++){
+      System.out.print("Introduce el número " +(i+1)+" : ");
+      array[i]=Integer.parseInt(System.console().readLine());
+      }
+    System.out.println();
+    System.out.println("Este es el array en orden inverso");
+    for(int i=9;i>=0;i--){
+      System.out.print(array[i]+" ");
+      }
+    System.out.println();
+    System.out.println("Este es el array en orden introducido");
+    for(int i=0;i<10;i++){
+      System.out.print(array[i]+" ");
+      }
+    
 	}
 }
-
