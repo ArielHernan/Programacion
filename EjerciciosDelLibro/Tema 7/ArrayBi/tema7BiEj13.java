@@ -12,10 +12,7 @@
     140 y 210. Los decimales de la media se pueden despreciar. Los nombres de
     los países se deben mostrar utilizando el array de países (no se pueden escribir
     directamente).
- 
  */
-
-
 public class tema7BiEj13 {
 	
 	public static void main (String args[]) {
@@ -26,21 +23,32 @@ public class tema7BiEj13 {
     int estmax=140;
     int suma=0;
     
+    System.out.print("                                                     Media  minima  maxima");
+    System.out.println();
+    
     for(int i=0;i<4;i++){
+      System.out.printf("%-10s",pais[i]);
       for(int j=0;j<10;j++){
         estaturas[i][j]=(int)(Math.random()*(210-140+1))+140;
         System.out.printf("%4d",estaturas[i][j]);
+        
+        if(estaturas[i][j]<estmin){
+          estmin=estaturas[i][j];
+          }
+        if(estaturas[i][j]>estmax){
+          estmax=estaturas[i][j];
+          }
+        suma=suma+estaturas[i][j];
         }
+      System.out.print(" |  ");
+      System.out.printf(suma/10+"     ");
+      System.out.print(estmin+"     ");
+      System.out.print(estmax+"     ");
+      
+      estmin=210;
+      estmax=140;
       System.out.println();
       }
-      
-      for(int i=0;i<4;i++){
-        
-        System.out.printf("%9s",pais[i]);
-        
-        
-        
-        }
 	}
 }
 

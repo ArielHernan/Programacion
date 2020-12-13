@@ -20,6 +20,7 @@ public class arrayBiarrayUni {
     int columnas=Integer.parseInt(System.console().readLine());
     
     int[][] bi=new int[filas][columnas];
+    
     bi [filas][columnas]=(int)(Math.random() *100)+1;
     
 	}

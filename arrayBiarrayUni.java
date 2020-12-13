@@ -34,7 +34,7 @@ public class arrayBiarrayUni {
     System.out.println();
     System.out.println();
   
-    for(int i=0;i<filas;i++){
+   /* for(int i=0;i<filas;i++){
       for(int j=0;j<columnas;j++){
         //coloco esta sucesion de if else para sustituir el printf ( para probar algo distinto y practicar) y así, si me salen números de 2 o 3 cifras el array no se descuadra.
         //usamos la variable incremento en vez de la i para practicar uso de variables y el uso del contador.
@@ -48,9 +48,16 @@ public class arrayBiarrayUni {
         }
         incremento+=1;
         System.out.println();
-      }
+      }*/
+      
+      for(int i=0;i<filas;i++){
+        for(int j=0;j<columnas;j++){
+          System.out.printf("%4d",uni[i*columnas+j]);
+          }
+        System.out.println();
+        }
  
-      }
+    }
 	}
 
 
