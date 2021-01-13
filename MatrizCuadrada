@@ -1,0 +1,21 @@
+/*
+El Programa ha de pedirle al usuario como Input un número (>=3) 
+el cual será el número de filas y columnas de un array bidimen-
+sional cuadrado, el Array bidimensional estará relleno con '*',
+acto seguido se imprime por pantalla el Array bid. cuadrado.
+Ahora tenemos que ver si el número introducido es par o impar,
+si es par, se preguntará al usuario el número de capas exteriores
+que quiere eliminar de ese cuadrado y se presentará(siempre ha de
+permanecer el cuadrado de 4 '*' central como mínimo
+En cambio si el número introducido es impar le pide al usuario
+elegir una dirección(izquierda, derecha, arriba o abajo),entonces
+el programa convertirá el array bidimensional cuadrado en un 
+triángulo de la máxima altura posible orientado hacia la dirección
+indicada previamente por el usuario y lo imprimirá.
+En AMBOS casos, los valores del Array han de ser modificados
+y una vez modificados recorrerlos para imprimirlos en pantalla.
+*/
+
+public class MatrizCuadrada {
+	
+	public static void main (String args[]) {
