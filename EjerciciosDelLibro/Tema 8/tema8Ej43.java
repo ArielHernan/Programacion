@@ -6,7 +6,7 @@
  */
 
 
-public class tema8FunEj43 {
+public class tema8Ej43 {
 	
 	public static void main (String args[]) {
     

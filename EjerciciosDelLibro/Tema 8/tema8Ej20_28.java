@@ -26,7 +26,7 @@ import java.util.Scanner;
     un array.
  * 
  */
-public class tema8FunEj20_28 {
+public class tema8Ej20_28 {
 	
 	public static void main (String args[]) {
     Scanner s=new Scanner(System.in);

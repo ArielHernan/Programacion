@@ -38,11 +38,28 @@ public class ArrayUni {
    * @param x   array unidimensional de números enteros.
    * */
   public static void muestraArrayInt(int x[]){
-    int formato=3;
+    
+    String formato="%"+misFunciones.Matematicas.digitos(misArrays.ArrayUni.maximoArrayInt(x))+"d";
+    System.out.print(" ");
+    int[] auxiliar= new int[x.length];
+    for(int i =0;i<x.length;i++)
+      for(int j =0;j<misFunciones.Matematicas.digitos(misArrays.ArrayUni.maximoArrayInt(x))+2;j++){
+        System.out.print("─");
+    }
+    System.out.println();
+    System.out.print("│ ");
     for(int n:x){
-      System.out.printf("%"+formato+"d",n);
+      System.out.printf(formato+" "+"│",n);
+    }
+    System.out.println();
+    System.out.print(" ");
+    for(int i =0;i<x.length;i++)
+      for(int j =0;j<misFunciones.Matematicas.digitos(misArrays.ArrayUni.maximoArrayInt(x));j++){
+        System.out.print("─");
     }
   }
+
+  
   
   
   

@@ -70,9 +70,9 @@ public class ArrayBi{
   public static int [][] presentaArrayBiInt(int x[][]){
     String formatoNumero = "%" + misFunciones.Matematicas.digitos(maximoArrayBiInt(x)) + "d";
   
-    for (int f = 0; f < x.length; f++) {
-        for (int c = 0; c < x[0].length; c++) {
-          System.out.printf(formatoNumero + " ", x[f][c]);
+    for (int i = 0; i < x.length; i++) {
+        for (int j = 0; j < x[0].length; j++) {
+          System.out.printf(formatoNumero + " ", x[i][j]);
         }
         System.out.println();
       }
