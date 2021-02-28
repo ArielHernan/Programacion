@@ -17,7 +17,7 @@ public class tema8Ej29_34 {
   System.out.println();
   
   
-  int[][] array=misArrays.ArrayBi.generaArrayBiInt(6,6,1,100);
+  int[][] array=misArrays.ArrayBi.generaArrayBiInt(10,10,1,100);
   
   
   misArrays.ArrayBi.presentaArrayBiInt(array);

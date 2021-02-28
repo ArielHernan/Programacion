@@ -67,16 +67,51 @@ public class ArrayBi{
  *
  * @param x array bidimiensional de números enteros
  */
-  public static int [][] presentaArrayBiInt(int x[][]){
+  public static void presentaArrayBiInt(int x[][]){
+    
     String formatoNumero = "%" + misFunciones.Matematicas.digitos(maximoArrayBiInt(x)) + "d";
-  
-    for (int i = 0; i < x.length; i++) {
+      
+      System.out.print("┌");
+      for(int i =0;i<x[0].length;i++){
+        for(int j =0;j<misFunciones.Matematicas.digitos(maximoArrayBiInt(x))+3;j++){
+          System.out.print("─");
+        }
+      }
+      System.out.print("┐");
+      System.out.println();
+      
+      for (int i = 0; i < x.length; i++) {
+        System.out.print("│ ");
         for (int j = 0; j < x[0].length; j++) {
-          System.out.printf(formatoNumero + " ", x[i][j]);
+          if(j==x[0].length-1){
+            System.out.printf(formatoNumero+"  │ ", x[i][j]);
+          }else{
+            System.out.printf(formatoNumero+" │ ", x[i][j]);
+          }
         }
         System.out.println();
+        if(i==x.length-1){
+          System.out.print("└");
+        }else{
+            System.out.print("├");
+          }
+        for(int k =0;k<x[0].length;k++){
+          for(int j =0;j<misFunciones.Matematicas.digitos(maximoArrayBiInt(x))+3;j++){
+            
+            System.out.print("─");
+          }
+        }
+        if(i==x[0].length-1){
+          System.out.print("┘");
+        }else{
+            System.out.print("┤");
+          }
+        System.out.println();
+        
       }
-      return x;
+  
+      
+    
   }
    
    
@@ -220,9 +255,20 @@ noreste hacia el suroeste.
 
     return diagonal;
   }
+  /** Poción n-esima, da el número que se encuentra en la posicion n-esima d un array*/
+  public static int nEsimo(int[][]n,int posicion){
+    int x=posicion/n[0].length;
+    int y=posicion%n[0].length;
+    
+    int solicitado=n[x][y];
+    return solicitado;
+  }
+  
+  
+  
 }
 
- 
+
  
  
  

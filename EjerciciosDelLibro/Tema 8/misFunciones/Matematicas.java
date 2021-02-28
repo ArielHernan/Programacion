@@ -236,6 +236,26 @@ public class Matematicas {
     return palotes;
   }
 
+/**introduces una ocurrencia y te digo cuantas veces se repite en un número*/
+  public static int ocurrencias(int digito, int n){
+    
+    int factor=10;
+    int repetido=0;
+    int resultado=0;
+    do{
+      if(n%factor==digito){
+        repetido=repetido+1;
+      }
+      n=n/10;
+      
+      }while(n>0);
+      if (repetido==0){
+        resultado= 0;
+      }else{
+        resultado=resultado;
+      }
+      return repetido;
+  }
 
 }
 

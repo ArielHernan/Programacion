@@ -53,9 +53,10 @@ public class ArrayUni {
     }
     System.out.println();
     System.out.print(" ");
-    for(int i =0;i<x.length;i++)
-      for(int j =0;j<misFunciones.Matematicas.digitos(misArrays.ArrayUni.maximoArrayInt(x));j++){
+    for(int i =0;i<x.length;i++){
+      for(int j =0;j<misFunciones.Matematicas.digitos(misArrays.ArrayUni.maximoArrayInt(x))+2;j++){
         System.out.print("─");
+      }
     }
   }
 
@@ -273,4 +274,33 @@ public static int[] filtraPrimos(int x[]){
     }
     return resultado;
   }
+  
+  
+   /**
+    * Evita repetir palabras, de un array*/
+   public static String[] sinRepetir(String[] s){
+    
+    int contador=0;
+    boolean repetido=false;
+    
+    String[] auxiliar=new String[s.length];
+    
+    for(int i=0;i<s.length;i++){
+      repetido=false;
+      for(int j=0;j<s.length;j++){
+        if(s[i]==auxiliar[j]){
+          repetido=true;
+        }
+      }
+      if(!repetido){
+        auxiliar[contador]=s[i];
+        contador++;
+      }
+    }
+    String[] resultado=new String[contador];  
+    for(int i=0;i<contador;i++){
+      resultado[i]=auxiliar[i];
+    }
+    return resultado;
+  } 
 }
